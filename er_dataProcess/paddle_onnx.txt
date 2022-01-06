@@ -1,0 +1,31 @@
+paddle2onnx
+ --model_dir ./inference_large/det/ 
+ --model_filename inference.pdmodel
+ --params_filename inference.pdiparams 
+ --save_file ./onnx_model/det_large.onnx 
+ --opset_version 11 
+ --enable_onnx_checker True 
+
+
+
+paddle2onnx 
+--model_dir ./output/det_db/  
+--model_filename  iter_epoch_10.pdmodel
+--params_filename iter_epoch_10.pdparams 
+--save_file  ./onnx_model/iter_epoch_10.onnx  
+--opset_version 11  
+--enable_onnx_checker True
+
+
+pip install paddle2onnx
+paddle2onnx  --model_dir E:/Pytorch/PaddleOCR-release-2.2/output/rec/fs/  --model_filename inference.pdmodel  --params_filename inference.pdiparams --save_file E:/Pytorch/PaddleOCR-release-2.2/onnx_model/fs.onnx --opset_version 11 --enable_onnx_checker True
+
+
+
+paddle2onnx
+--model_dir E:/Pytorch/PaddleOCR-release-2.2/output/db_mv3/
+--model_filename iter_epoch_2.pdopt
+--params_filename iter_epoch_2.pdparams
+--save_file E:/Pytorch/PaddleOCR-release-2.2/onnx_model/iter_epoch_2.onnx
+--opset_version 11
+--enable_onnx_checker True
